@@ -2,7 +2,7 @@
 
 
 ## File Structure
-
+```
 WhewKit/
 ├── dist/ - distribution used for testing
 │   └── css
@@ -17,7 +17,7 @@ WhewKit/
 ├── base.scss - testing sass file
 ├── index.pug - testing pug file
 └── whewkit.scss - importing partials from /kit
-
+```
 
 ### Kit folders
 - Extends
