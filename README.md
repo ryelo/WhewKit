@@ -39,9 +39,9 @@ WhewKit/
 
 You have three different ways to gulp
 
-`gulp sass` - compiles `./base.scss` to `./dist/css/base.css`
-`gulp pug` - compiles `./index.pug` to `./dist/html/index.html`
-`gulp watch` - compiles both files above, starts browsersync, and loads localhost
+- `gulp sass` - compiles `./base.scss` to `./dist/css/base.css`
+- `gulp pug` - compiles `./index.pug` to `./dist/html/index.html`
+- `gulp watch` - compiles both files above, starts browsersync, and loads localhost
 
 
 ## Development
