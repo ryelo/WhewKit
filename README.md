@@ -53,4 +53,4 @@ You have three different ways to gulp
 
 ## Using WhewKit in another project (for now)
 
-Clone the directory and `@import '/path/to/whewkit.scss'
+Clone the directory and `@import '/path/to/whewkit.scss`
