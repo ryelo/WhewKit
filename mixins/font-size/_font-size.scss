@@ -1,0 +1,19 @@
+// Generate font-size in rem
+// =================================================================/
+@mixin font-size($size, $line: $size * 1.4) {
+  font-size: ($size);
+  font-size: ($size / $global-font-size) + rem;
+
+  @if $line == 1 {
+    line-height: 1;
+
+  } @else if $line != null {
+    line-height: $line;
+    line-height: ($line / $global-font-size) + rem;
+  }
+}
+
+// Usage ---
+// .foo {
+//   @include font-size(14px, 1);
+// }

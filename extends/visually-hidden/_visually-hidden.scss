@@ -1,0 +1,25 @@
+// Hide an element visually, useful for accessibility
+// =================================================================/
+%visually-hidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+// Usage ---
+//
+// HTML:
+// <button>
+//  <p class='visually-hidden'> hamburger menu </p>
+//  <img src='hamburger.png'/>
+// </button>
+//
+// SCSS/SASS:
+// .container-with-floated-children {
+//   @extend %clearfix;
+// }

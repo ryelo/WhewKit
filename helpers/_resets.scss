@@ -1,0 +1,25 @@
+// Margin and padding
+.nopad { padding: 0; }
+.nopadi { padding: 0 !important; }
+
+.nomar { margin: 0; }
+.nomari { margin: 0 !important; }
+
+%reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
+
+// Buttons
+@mixin reset-button($padding) {
+  margin: 0;
+  @include rem('padding', $padding);
+  background: none;
+  border-radius: 0;
+}

@@ -1,0 +1,11 @@
+// Generate a box
+// =================================================================/
+@mixin box($width, $height=$width) {
+  width: $width;
+  height: $height;
+}
+
+// Usage ---
+// .box {
+//   @include box(50px);
+// }
