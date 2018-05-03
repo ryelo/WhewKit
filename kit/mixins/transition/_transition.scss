@@ -1,0 +1,36 @@
+// Input: any property(border-radius, opacity, etc)
+@mixin whew-transition($property) {
+
+  transition: $property 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: $property 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  -ms-transition: $property 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: $property 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: $property 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// Input: any property(border-radius, opacity, etc), time(.2s), method(ease-out)
+@mixin transition($property, $time, $method) {
+
+  @if $property == 'whew'{
+    $property: all;
+  }
+
+  @if $time == 'whew'{
+    $time: 0.2s;
+  }
+
+  @if $method == 'whew' {
+    $method: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  transition: $property $time $method;
+  -o-transition: $property $time $method;
+  -ms-transition: $property $time $method;
+  -moz-transition: $property $time $method;
+  -webkit-transition: $property $time $method;
+}
+
+// Usage ---
+// .foo {
+//   @include transition(all);
+// }

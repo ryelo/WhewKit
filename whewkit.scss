@@ -1,0 +1,28 @@
+// Variables
+// ======================================
+@import 'kit/variables/colors.scss';
+@import 'kit/variables/global-variables.scss';
+
+
+// Mixins
+// ======================================
+@import 'kit/mixins/transition/transition.scss';
+@import 'kit/mixins/box/box.scss';
+@import 'kit/mixins/box-shadow/box-shadow.scss';
+@import 'kit/mixins/breakpoints/breakpoints.scss';
+@import 'kit/mixins/font-size/font-size.scss';
+@import 'kit/mixins/gradient/gradient.scss';
+@import 'kit/mixins/hue-map/hue-map.scss';
+@import 'kit/mixins/positioning-block/positioning-block.scss';
+@import 'kit/mixins/rem/rem.scss';
+
+// Extends
+// ======================================
+@import 'kit/extends/clearfix/clearfix.scss';
+@import 'kit/extends/visually-hidden/visually-hidden.scss';
+
+
+// Helpers
+// ======================================
+@import 'kit/helpers/button-outline.scss';
+@import 'kit/helpers/resets.scss';

@@ -1,8 +1,8 @@
 // Generate a box
 // =================================================================/
-@mixin box($width, $height=$width) {
-  width: $width;
-  height: $height;
+@mixin box($size) {
+  width: $size;
+  height: $size;
 }
 
 // Usage ---
