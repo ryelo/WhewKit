@@ -1,0 +1,41 @@
+// Use color map to generate colors for different properties
+// f: (font) color
+// bg: background color
+// bs: box-shadow color
+// =================================================================/
+@mixin color-map($property, $color){
+
+  @if $property == 'all'{
+    background: map-get($whew-color-map, 'bg-' + $color);
+    color: map-get($whew-color-map, 'f-' + $color);
+    box-shadow: inset 3px 0 0 0 map-get($stateColors, 'bs-' + $color);
+  }
+
+  @if $property == 'background'{
+    background: map-get($whew-color-map, 'bg-' + $color);
+  }
+
+  @if $property == 'color'{
+    color: map-get($whew-color-map, 'f-' + $color);
+  }
+
+  @if $property == 'box-shadow'{
+    box-shadow: inset 3px 0 0 0 map-get($whew-color-map, 'bs-' + $color);
+  }
+
+  @if $property == null {}
+}
+
+// Why would you use this?
+// It's nice to use when assigning classes based on varibles
+// Example:
+// js returns a state (passed or failed) and assigns the element a class (.passed or .failed)
+
+// @mixin state($state) {
+//   @if $state == failed {
+//     @include color-map(all, red);
+//   }
+//   @if $state == passed {
+//     @include color-map(all, green);
+//   }
+// }

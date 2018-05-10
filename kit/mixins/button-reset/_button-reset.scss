@@ -1,0 +1,13 @@
+// Reset button styles
+// =================================================================/
+@mixin button-reset() {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+// Usage ---
+// button {
+//   @include button-reset();
+// }

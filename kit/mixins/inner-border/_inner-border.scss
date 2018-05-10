@@ -1,0 +1,12 @@
+// Create an "inner/inset border"
+// =================================================================/
+@mixin inner-border($size, $color) {
+  -webkit-box-shadow: inset 0px 0px 0px $size $color;
+     -moz-box-shadow: inset 0px 0px 0px $size $color;
+          box-shadow: inset 0px 0px 0px $size $color;
+}
+
+// Usage ---
+// .foo {
+//   @include inner-border(5px, red);
+// }
