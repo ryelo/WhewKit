@@ -1,3 +1,6 @@
+
+![travis build](https://img.shields.io/travis/ryelo/WhewKit.svg)
+
 # WhewKit
 
 
