@@ -30,6 +30,26 @@ gulp.task('browserSync', function() {
   })
 })
 
+gulp.task('build', ['sass', 'pug'], function(){
+  gulp.task('sass', function(){
+    return gulp.src('base.scss')
+      .pipe(sass()) // Converts Sass to CSS with gulp-sass
+      .pipe(gulp.dest('dist/css'))
+      .pipe(browserSync.reload({
+        stream: true
+      }))
+  });
+  
+  gulp.task('pug', function buildHTML() {
+    return gulp.src('index.pug')
+      .pipe(pug()) // Converts pug to HTML with gulp-pug
+      .pipe(gulp.dest('dist/html'))
+      .pipe(browserSync.reload({
+        stream: true
+      }))
+  });
+})
+
 gulp.task('watch', ['browserSync', 'sass', 'pug'], function(){
   gulp.watch('whewkit.scss', ['sass']);
   gulp.watch('base.scss', ['sass']);
