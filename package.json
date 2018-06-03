@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/ryelo/WhewKit#readme",
   "devDependencies": {
-    "browser-sync": "^2.24.3",
+    "browser-sync": "^2.24.4",
     "gulp": "^3.9.1",
     "gulp-pug": "^4.0.1",
     "gulp-sass": "^4.0.1"
